@@ -96,7 +96,7 @@ def run_ui(file_path: str, root_path, params: list):
         class_name = class_names[0]
         if len(class_names) > 1:
             name_str = '\n'.join([f'{i} {name}' for i, name in enumerate(class_names)])
-            msg = f"请选择需要加载的类序号\n{name_str}n"
+            msg = f"请选择需要加载的类序号\n{name_str}\n"
             class_name = class_names[int(raw_input(msg))]
         py_path = os.path.join(root_path, "PreQtUI.py")
         python_path = os.path.join(root_path, r"venv\Scripts\python.exe")
